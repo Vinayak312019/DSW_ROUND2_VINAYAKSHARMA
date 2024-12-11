@@ -1,5 +1,5 @@
-HI i am vinayak sharma please feel from to view my file. I have explained every steps which i have done on my file with its code. model and visualization, performance matrix and all eda andsteps are executed in single file only. still for ur reference i have put my model code here too. 
-#I have explained every step in ipynb file itself so please view my file and see the executions with explaination.
+#HI i am vinayak sharma please feel from to view my file. I have explained every step in ipynb file itself so please view my file and see the executions with explaination. I have explained every steps which i have done on my file with its code. model,visualization, performance matrix and all eda andsteps are executed in single file only. still for ur reference i have put my model code here too. 
+
     class LoanDefaultModel:
     def __init__(self, data_path):
         """Initialize the model class with the path to the training data."""
