@@ -60,3 +60,23 @@ class LoanDefaultModel:
     def predict(self, new_data):
         """Predict using the trained model on new data."""
         return self.model.predict(new_data)
+# Path to the training data file
+data_path = 'train_data.xlsx'
+
+# Initialize the model class
+model = LoanDefaultModel(data_path)
+
+# Load and preprocess the data
+model.load().preprocess()
+
+# Train and evaluate Logistic Regression model
+print("Training and Evaluating Logistic Regression...")
+model.train(model_type='logistic_regression')
+model.test()
+
+# Train and evaluate Random Forest Classifier model
+print("\nTraining and Evaluating Random Forest Classifier...")
+model.train(model_type='random_forest')
+model.test()
+
+# Add markdown cells in the notebook to summarize findings and choose the best model based on evaluation metrics.
